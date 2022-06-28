@@ -1,0 +1,80 @@
+constructor
+render
+componentWillMount
+componentDidMount
+componentWillUpdate 
+componentDidUpdate 
+componentWillUnmount 
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+-------------------------------------------
+this.myRef = React.createRef();
+this.myRef.current.style.color="#09c";
+ ref={this.myRef} 
+------------------------------------------- 
+onEvent={() => {
+  this.change("ar");
+}}
+------------------------------------------- 
+ <Outlet />
+ ------------------------------------------- 
+ {this.props.name}
+ {this.props.children}
+{this.props.match.params.id}
+  ------------------------------------------- 
+this.setState({
+      name:'value'
+})
+{this.state.name}
+------------------------------------------- 
+<li key={user.name} style={{'color':user.age>20?'red':'blue'}}>{user.name}</li>
+-------------------------------------------
+PARENT 
+state={
+    pass:''
+}
+news=(pa)=>{
+    this.setState({
+      ...this.state,
+      pass:pa
+    })
+}
+
+<Sup z={this.news} '>
+
+CHILD
+bb=()=>{
+    this.props.z('data data data data')
+}
+<button onClick={this.bb}>bb bb</button>
+-------------------------------------------
+<div className={this.state.x ===true?'three':'two','one two'}>one </div>
+-------------------------------------------
+{
+          (
+              ()=>{
+                  if(){
+
+                  }else if(){
+
+                  }else{
+
+                  }
+
+              }
+          )()
+      }
+-------------------------------------------
+import React ,{lazy,Suspense} from 'react';
+const Single=lazy(()=>import('./Single/Single'))
+<Suspense fallback={}></Suspense>
+-------------------------------------------
+ {employees.map(employee => {
+        return (
+          <div key={employee.id}>
+            <h2>name: {employee.name}</h2>
+          </div>
+        );
+      })}
+-------------------------------------------
+-------------------------------------------
+-------------------------------------------
